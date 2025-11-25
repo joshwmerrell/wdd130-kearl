@@ -78,9 +78,13 @@ header nav {
     color: #64E8FF;
 }
 
+#header_title_background, #header_nav_background, footer {
+    /* background-color: #1E90FF; */
+    border: 1px solid #64E8FF;
+}
+
 #header_title_background, #header_nav_background {
     z-index: -1;
-    border: 1px solid #64E8FF;
 }
 
 #header_title_background {
@@ -96,5 +100,4 @@ header nav {
 footer {
     margin: 5% 0 0 0;
     text-align: center;
-    border: 1px solid #64E8FF
 }
