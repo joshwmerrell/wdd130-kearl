@@ -8,15 +8,93 @@ Accent 2: #FFD166
 Heading Font: Orbitron
 Paragraph Font: Inter*/
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
 
 body {
-    padding: 0 2% 0 2%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2F36;
+}
+
+#content {
+    margin: 0 auto;
+    padding: 1% 2% 1% 2%;
+    max-width: 1600px;
+    font-family: Inter;
+    text-decoration: none;
+    color: #FFD166;
+}
+
+h1, h2, h3 {
+    font-family: Orbitron;
 }
 
 header {
+    margin: 0 0 5% 0;
+    display: grid;
+    grid-template-columns: 0.05fr 0.95fr;
+    column-gap: 2%;
+    row-gap: 10%;
+}
 
+#logo_container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    margin: 25%;
+    width: 100%;
+}
+
+#logo {
+    width: 100%;
+}
+
+#title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    margin: 1%;
+    width: max-content;
+    height: max-content;
+}
+
+header nav {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link {
+    margin: 2% 10% 2% 10%;
+    text-decoration: none;
+    color: #FFD166;
+}
+
+.nav_link:hover {
+    color: #64E8FF;
+}
+
+#header_title_background, #header_nav_background {
+    z-index: -1;
+    border: 1px solid #64E8FF;
+}
+
+#header_title_background {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#header_nav_background {
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 footer {
-
+    margin: 5% 0 0 0;
+    text-align: center;
+    border: 1px solid #64E8FF
 }
