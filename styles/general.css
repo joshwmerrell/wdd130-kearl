@@ -64,7 +64,7 @@ header {
     column-gap: 4%;
 }
 
-#title * {
+#page_name, #site_name {
     align-self: center;
     grid-row: 1/2;
     white-space: nowrap;
