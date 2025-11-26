@@ -1,0 +1,46 @@
+.console_card {
+    max-height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.75fr 1fr 1fr 0.75fr;
+    grid-template-rows: 1fr 4fr 1fr 4fr 1fr;
+}
+
+.console_card_title, .console_card_units_sold, .console_card_released {
+    grid-column: 3/4;
+    justify-self: left;
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    height: max-content;
+}
+
+.console_card_title {
+    grid-row: 2/3;
+    align-self: flex-end;
+}
+
+.console_card_units_sold {
+    grid-row: 3/4;
+    align-self: flex-end;
+}
+
+.console_card_released {
+    grid-row: 4/5;
+    align-self: flex-start;
+}
+
+.console_card_image {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    justify-self: center;
+    align-self: center;
+    height: 75%;
+}
+
+.console_card_background {
+    grid-column: 2/4;
+    grid-row: 2/5;
+    z-index: -1;
+    border: 1px solid #64E8FF;
+}
