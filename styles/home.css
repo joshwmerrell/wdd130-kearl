@@ -46,7 +46,7 @@
     align-self: flex-start;
 }
 
-.console_card_image {
+.console_card_image, .console_card_image_overlay {
     grid-column: 1/2;
     grid-row: 1/4;
     margin: 0 -17% 0 0; /* When console_card has a border */
@@ -56,4 +56,17 @@
     justify-self: center; /* When console_card has a border */
     /* justify-self: right; */ /* When console_card does not have a border */
     align-self: center;
+}
+
+.light_image_contrasted {
+    filter: grayscale() contrast(1) brightness(1);
+}
+
+.dark_image_contrasted {
+    filter: grayscale() contrast(1.5) brightness(3.5);
+}
+
+.console_card_image_overlay {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(39%) saturate(662%) hue-rotate(339deg) brightness(102%) contrast(101%) opacity(0.75);
+    /* z-index: 1; */
 }
