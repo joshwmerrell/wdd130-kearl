@@ -58,7 +58,9 @@
     align-self: center;
 }
 
-.light_image_contrasted {
+/* If you want to have all the console images the same color as the font */
+
+/* .light_image_contrasted {
     filter: grayscale() contrast(1) brightness(1);
 }
 
@@ -68,5 +70,4 @@
 
 .console_card_image_overlay {
     filter: brightness(0) saturate(100%) invert(82%) sepia(39%) saturate(662%) hue-rotate(339deg) brightness(102%) contrast(101%) opacity(0.75);
-    /* z-index: 1; */
-}
+} */
