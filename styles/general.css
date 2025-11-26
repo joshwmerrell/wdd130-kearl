@@ -57,25 +57,17 @@ header {
     grid-row: 1/2;
     align-self: center;
     margin: 1%;
-    width: 100%;
+    width: 95%;
     height: max-content;
     display: grid;
-    grid-template-columns: 230px;
-    column-gap: 4%;
+    grid-template-columns: 1fr 1fr;
 }
 
 #page_name, #site_name {
+    justify-self: flex-start;
     align-self: center;
     grid-row: 1/2;
     white-space: nowrap;
-}
-
-#page_name {
-    justify-self: left;
-}
-
-#site_name {
-    justify-self: center;
 }
 
 header nav {
