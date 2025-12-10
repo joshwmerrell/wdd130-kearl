@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #2A2F36;
+    min-height: 100vh;
+}
+
+main {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fact_card {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(30, 144, 255, 0.1);
+    border: 2px solid #64E8FF;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 0 15px rgba(100, 232, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.fact_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(100, 232, 255, 0.5);
+    border-color: #FFD166;
+}
+
+.fact_card h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FFD166;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1E90FF;
+    padding-bottom: 0.5rem;
+}
+
+.fact_card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0.8rem 0;
+}
+
+.fact_card::before {
+    content: attr(data-fact-num);
+    position: absolute;
+    top: -10px;
+    left: 2rem;
+    width: 30px;
+    height: 30px;
+    background-color: #1E90FF;
+    color: #2A2F36;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFD166;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .fact_card {
+        padding: 1.5rem;
+    }
+
+    .fact_card h2 {
+        font-size: 1.5rem;
+    }
+
+    .fact_card p {
+        font-size: 1rem;
+    }
+}
